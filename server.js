@@ -52,28 +52,5 @@ app.get("/api/logos/:company", async (req, res) => {
   );
 });
 
-// app.get("/api/get-files", (req, res) => {
-//   return request.get(
-//     {
-//       url: ` https://api.hubapi.com/filemanager/api/v2/files?hapikey=${process.env.API_KEY}`,
-//     },
-//     function optionalCallback(err, httpResponse, body) {
-//       res.json(httpResponse.body);
-//     }
-//   );
-// });
-
-// app.post("/api/get-file", (req, res) => {
-//   const image = req.body.image;
-
-//   return request.get(
-//     {
-//       url: image,
-//     },
-//     function optionalCallback(err, httpResponse, body) {
-//       res.json(httpResponse.body);
-//     }
-//   );
-// });
 
 app.listen(process.env.PORT || 5000);
