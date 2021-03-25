@@ -2,7 +2,7 @@ const request = require("request");
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-var cors = require("cors");
+const cors = require("cors");
 
 require("dotenv/config");
 const baseUrl = "https://nigerialogos.com";
